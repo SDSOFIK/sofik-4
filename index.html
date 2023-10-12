@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sofik</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="calcultaor">
+        
+        
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="result">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="delet" onclick="deleteMe ('c')">
+                </td>
+                <td>
+                    <input type="button" value="C" onclick="deleteMe('c')">
+                </td>
+                <td>
+                    <input type="button" value="(" onclick="calcultaor('(')">
+                </td>
+                <td>
+                    <input type="button" value=")" onclick="calcultaor (')')">
+                </td>
+                </td>
+                <tr>
+                <td>
+                    <input type="button" value="7" onclick="calcultaor ('7')">
+                </td>
+                <td>
+                    <input type="button" value="8" onclick="calcultaor('8')">
+                </td>
+                <td>
+                    <input type="button" value="9" onclick="calcultaor('9')">
+                </td>
+                    <td>
+                    <input type="button" value="+" onclick="calcultaor('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onclick="calcultaor('4')">
+                    <td>
+                    <input type="button" value="5" onclick="calcultaor('5')">
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="calcultaor('6')">
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="calcultaor('-')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="calcultaor('1')">
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="calcultaor('2')">
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="calcultaor('3')">
+                </td>
+                <td>
+                    <input type="button" value="*" onclick="calcultaor('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="0" onclick="calcultaor('0')">
+                </td>
+                <td>
+                    <input type="button" value="." onclick="calcultaor('.')">
+                </td>
+                <td>
+                    <input type="button" value="/" onclick="calcultaor('/')">
+                </td>
+                <td>
+                    <input type="button" value="=" onclick="anwer ('=')">
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+<script>
+    function deleteMe() {
+        document.getElementById("result").value= ""
+        
+    }
+    function calcultaor(Svalue) {
+        document.getElementById("result").value+=Svalue
+    }
+    function anwer () {
+        let s = document.getElementById("result").value ;
+        let d =eval (s);
+        
+        document.getElementById("result").value =d
+    }
+</script>
+
+
+
+
+</body>
+</html>

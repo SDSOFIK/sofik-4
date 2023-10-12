@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+.calcultaor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 600px;
+}
+table{
+    width: 100%;
+    height: 400px;
+    border-collapse: collapse;
+    background-color: aliceblue;
+    box-shadow: rgba(14,14,14,0.75) 10px 10px 5px 0px;
+    border: 2px solid rgb(221, 0, 255);
+}
+td{
+    text-align: center;
+   
+    border: 3px solid black;
+    
+    
+}
+input[type="button"]{
+    width: 100px;
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+input[type="button"]:hover{
+    background-color: aqua;
+    transition: 2s;
+}
+
+
+input[type="text"]{
+    width: 85%;
+    padding: 30px;
+}
+
+
+
+
